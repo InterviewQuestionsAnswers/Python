@@ -30,3 +30,4 @@
 29. Explain the difference between lists, tuples, and dictionaries in Python.
 30. What are *args and **kwargs in Python functions?
 31. How would you use Python and Boto3 to list all EC2 instances in a region?
+32. Write a Python script to read the log file and print only the lines that contain the word 'ERROR'?

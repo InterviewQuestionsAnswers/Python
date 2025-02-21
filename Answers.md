@@ -392,3 +392,15 @@
        - `boto3.client('ec2', region_name='us-east-1')` → Creates an EC2 client for the specified region.
        - `describe_instances()` → Fetches all EC2 instances.
        - Loops through `response['Reservations']` to extract and print instance details.
+
+32. **Write a Python script to read the log file and print only the lines that contain the word 'ERROR'?**
+    - Code:
+        ```python
+        log_file_path = "/home/opt/packages/admin-logs/logfile.log"
+    
+        # Open the log file and read line by line
+        with open(log_file_path, "r") as file:
+            for line in file:
+                if "ERROR" in line:  # Check if "ERROR" exists in the line
+                    print(line.strip())  # Print the line without extra spaces or newlines
+        ```
